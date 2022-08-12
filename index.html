@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="icon" href="favicon.ico"> -->
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("background image.jpg");
+  /* background-position: fixed; */
+  /* background: rgba(255,255,255,0.5); */
+/* backdrop-filter: blur(3px); */
+}
+
+/* .header {
+  background-color: #f1f1f1;
+  <!-- padding: 30px; -->
+  text-align: center;
+} */
+
+.navbar {
+  overflow: hidden;
+  background-color:#E6B325 ;
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar p {
+  float: center;
+  display: block;
+  color: black;
+  /* text-align: right; */
+  <!-- padding: 14px 16px; -->
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+      padding-top: 160px;
+      padding-left: 80px;
+      margin-left:90px;
+      color: white;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+img.background{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  /* height: 100%; */
+  -webkit-filter: blur(10px);
+  filter: blur(5px);
+}
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #E6B325;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #E6B325;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#First_Name , #Grandfather_Name , #Great_Grandfather_Name , #Mother_Name , #Grandmother_Name{
+  width: 400px;
+}
+#Great_Grandmother_Name , #Step_Mother_Name , #Maternal_Grandfather_Name , #Grandfather_of_Mother_Name , #Great_Grandfather_of_Mother_Name{
+  width: 400px;
+}
+#Maternal_Grandmother_Name , #Maternal_Grandmother_Name , #Maternal_Great_Grandmother_Name , #Wife_Name , #Son_Name , #AatmaGuru_Name{
+  width:400px;
+}
+#Brothers_Name , #Father’s_Brother_Name , #Mother’s_Brother_Name , #Daughter_Name , #Sister’s_Name , #Swamy_Name{
+  width:400px;
+}
+#Daughter’s_Son_Name , #Sister’s_Son_Name , #Father’s_Sister_Name , #Mother’s_Sister_Name , #Son-In-Law_Name , #Dependent’s_Name{
+  width:400px;
+}
+#Brother-in-law_Name , #Daughter-in-law_Name , #Wife’s_Father_Name , #Wife’s_Mother_Name , #Wife’s_Brother_Name{
+  width:400px;
+}
+</style>
+<link rel="icon" href="C:\Users\Venkata Karthik\Desktop\gotrams\example\favicon (3).ico">
+</head>
+<body>
+  <!-- <img  class="background" src="C:\Users\Venkata Karthik\Desktop\gotrams\background image.jpg" alt=""> -->
+
+<div class="navbar navbar-expand-lg fixed-top navbar-scroll">
+  <p href="javascript:void(0)"><b>వేదమయీ నిర్వహణలో......... బ్రహ్మశ్రీ కేసాప్రగడ ఫణీన్ద్ర రాజశేఖరశర్మగారి ఆధ్వర్యవంల <br>
+  గయా శ్రీవిష్ణుపాద మహాక్షేత్రం, ఫల్గుణీ నదీ తీరంలో తేదీ:- 06-10-2021 న నిర్వహించు <br>
+  మహాలయ అమావాస్య పితృయజ్ఞంలో గోత్ర -నామములు.....</b></p>
+</div>
+<div class="content">
+  <label for="First_Name"><b>1.Father/ తండ్రి:</b></label><br>
+  <input name="first_name" id="First_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Grandfather"><b>2. Grandfather/ తాత :</b></label><br>
+  <input name="Grandfather_name" id="Grandfather_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="1_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Great_Grandfather"><b>3. Great Grandfather/ ముత్తాత:</b></label><br>
+  <input name="Great_Grandfather_name" id="Great_Grandfather_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="2_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Mother"><b>4. Mother/ తల్లి :</b></label><br>
+  <input name="Mother_name" id="Mother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="3_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Grandmother"><b>5. Grandmother/ నాయనమ్మ  :</b></label><br>
+  <input name="Grandmother_name" id="Grandmother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="4_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Great_Grandmother"><b>6. Great Grandmother/ ముత్తమ్మ  :</b></label><br>
+  <input name="Great_Grandmother_name" id="Great_Grandmother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="5_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Step_Mother_Name"><b>7. Step Mother/ సవతి తల్లి :</b></label><br>
+  <input name="Step_Mother_name" id="Step_Mother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="6_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Maternal_Grandfather_Name"><b>8. Maternal Grandfather / తల్లి తండ్రి  :</b></label><br>
+  <input name="Maternal_Grandfather_name" id="Maternal_Grandfather_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="7_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Grandfather_of_Mother_Name"><b>9- Grandfather of Mother / తల్లి తాత:</b></label><br>
+  <input name="Grandfather_of_Mother_name" id="Grandfather_of_Mother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="8_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Great_Grandfather_of_Mother_Name"><b>10. Great Grandfather of Mother / తల్లి ముత్తాత :</b></label><br>
+  <input name="Great_Grandfather_of_Mother_name" id="Great_Grandfather_of_Mother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="9_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Maternal_Grandmother_Name"><b>11. Maternal Grandmother /అమ్మమ్మ :</b></label><br>
+  <input name="Maternal_Grandmother_name" id="Maternal_Grandmother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="10_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Maternal_Grandmother_Name"><b>12. Maternal Grandmother /అమ్మమ్మ :</b></label><br>
+  <input name="Maternal_Grandmother_name" id="Maternal_Grandmother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="11_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Maternal_Great_Grandmother_Name"><b>13- Maternal Great Grandmother/ తల్లికి ముత్తమ్మ :</b></label><br>
+  <input name="Maternal_Great_Grandmother_name" id="Maternal_Great_Grandmother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="12_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Wife_Name"><b>14. Wife/ భార్య:</b></label><br>
+  <input name="Wife_name" id="Wife_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="13_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Son_Name"><b>15. Son/ కుమారుడు :</b></label><br>
+  <input name="Son_name" id="Son_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="14_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Brothers_Name"><b>16. Brothers/ సోదరులు :</b></label><br>
+  <input name="Brothers_name" id="Brothers_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="15_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Father’s_Brother_Name"><b>17. Father’s Brother/ తండ్రి సోదరులు :</b></label><br>
+  <input name="Father’s_Brother_name" id="Father’s_Brother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="16_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Mother’s_Brother_Name"><b>18. Mother’s Brother/ మేనమామ:</b></label><br>
+  <input name="Mother’s_Brother_name" id="Mother’s_Brother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="17_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Daughter_Name"><b>19. Daughter/ కుమార్తె:</b></label><br>
+  <input name="Daughter_name" id="Daughter_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="18_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Sister’s_Name"><b>20. Sister’s/ అక్క చెల్లెళ్లు:</b></label><br>
+  <input name="Sister’s_name" id="Sister’s_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="19_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Daughter’s_Son_Name"><b>21. Daughter’s Son/ కూతురు కొడుకు:</b></label><br>
+  <input name=" Daughter’s_Son_name" id="Daughter’s_Son_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="20_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Sister’s_Son_Name"><b>22. Sister’s Son/ మేనల్లుడు:</b></label><br>
+  <input name="Sister’s_Son_name" id="Sister’s_Son_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="21_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Father’s_Sister_Name"><b>23. Father’s Sister/ మేనత్త:</b></label><br>
+  <input name="Father’s_Sister_name" id="Father’s_Sister_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="22_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Mother’s_Sister_Name"><b>24. Mother’s Sister/ తల్లి తోబుట్టువు :</b></label><br>
+  <input name="Mother’s_Sister_name" id="Mother’s_Sister_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="23_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Son-In-Law_Name"><b>25. Son-In-Law/ అల్లుడు:</b></label><br>
+  <input name="Son-In-Law_name" id="Son-In-Law_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="24_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Brother-in-law_Name"><b>26. Brother-in-law/ బావగారు:</b></label><br>
+  <input name="Brother-in-law_name" id="Brother-in-law_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="25_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="Daughter-in-law_Name"><b>27. Daughter-in-law/ కోడలు పేరు :</b></label><br>
+  <input name="Daughter-in-law_name" id="Daughter-in-law_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="26_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Wife’s_Father_Name"><b> 28.Wife’s Father/ భార్య తండ్రి పేరు:</b></label><br>
+  <input name="Wife’s_Father_name" id="Wife’s_Father_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="27_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Wife’s_Mother_Name"><b>29. Wife’s Mother/ భార్య తల్లి :</b></label><br>
+  <input name="Wife’s_Mother_name" id="Wife’s_Mother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="28_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Wife’s_Brother_Name"><b>30. Wife’s Brother/ భార్య సోదరుడు :</b></label><br>
+  <input name="Wife’s_Brother_name" id="Wife’s_Brother_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="29_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Swamy_Name"><b>31. Swamy / స్వామి </b></label><br>
+  <input name="Swamy_name" id="Swamy_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="30_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for="  AatmaGuru_Name"><b>32. Aatma Guru / ఆత్మ గురువు (Life teacher):</b></label><br>
+  <input name="AatmaGuru_name" id="AatmaGuru_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="31_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+
+  <label for=" Dependent’s_Name"><b>33. Dependent’s / ఆశ్రయించినవారు :</b></label><br>
+  <input name="Dependent’s_name" id="Dependent’s_Name" type="text"  placeholder="Name" />
+  <label for="Name"><b>Gotram:</b></label>
+  <input name="32_Gotram" id="Gotram" type="text" placeholder="Gotram" /><br><br>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
